@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Birds Around The World</title>
+
+    <style>
+        body {
+            background-image: url("jungle (1).jpg") ;
+
+        }
+        #bird_image{
+            vertical-align: middle; 
+            border-radius: 50%;
+        }
+        h1{
+            vertical-align: middle;
+            color:rgba(131, 14, 131, 0.999);
+            font-size: 70px;
+        }
+        input[type="text"]{
+            height: 45px;
+            width: 250px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            border-radius: 8px;
+        }
+        #submit{
+            background-color:rgb(88, 224, 88);
+            height: 45px;
+            width:150px ;
+            border-radius: 8px;
+
+        }
+        #submit:hover{
+            background-color:rgb(54, 169, 54);
+            cursor: pointer;
+        }
+        #display {
+            justify-self: center;
+            font-size: 30px;
+        }
+        #display_container{
+            height: 250px;
+            width: 500px;
+            align-self: center ;
+            background-color:#edeb5a;
+            display: none;
+            justify-self: center;
+            justify-content: center;
+            align-items: center;
+            padding: 15px ;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div style="display: flex; align-items: center; justify-content: center;padding-right: 200px;gap: 20px;">
+        <img id="bird_image" height="200" width="200" src="Birdpic.jpg" >
+        <h1>Birds Around India</h1>
+    </div>
+   <div style="display: flex; align-items: center;justify-content: center; gap: 20px;"> 
+        <input  id= "bird_name"; type="text" placeholder="Type the name of a bird!">
+        <button id="submit" onclick="get_bird_info()">Submit!</button>
+
+    </div> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="display_container">
+        <p id = "display">Found in: Grassy areas of Kerala.</p>
+    </div>
+    
+
+
+    <script src="bird.js"></script>
+
+</body>
+</html> 
